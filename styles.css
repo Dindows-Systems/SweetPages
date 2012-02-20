@@ -1,0 +1,133 @@
+*{
+	/* Universal page reset */
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Setting default text color, background and a font stack */
+	font-size:0.825em;
+	color:#666;
+ 	font-family:Arial, Helvetica, sans-serif;
+}
+
+#main{
+	/* The main container div */
+	position:relative;
+	margin:50px auto;
+	width:250px;
+ 	border:1px solid #CCCCCC;
+	padding:70px 25px 60px;
+	
+	/* CSS3 rounded corners */
+	
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+#holder{
+	/* The unordered list that is to be split into pages */
+
+	width:205px;
+	overflow:hidden;
+	position:relative;
+ 	padding-bottom:10px;
+
+	/*	CSS3 inner shadow (the webkit one is commeted, because Google Chrome
+		does not like rounded corners combined with inset shadows): */
+
+	 
+}
+
+.swControls{
+	position:absolute;
+	margin-top:10px;
+}
+
+a.swShowPage{
+
+	/* The links that initiate the page slide */
+
+	background-color:#444444;
+	float:left;
+	height:15px;
+	margin:4px 3px;
+	text-indent:-9999px;
+	width:15px;
+	/*border:1px solid #ccc;*/
+	
+	/* CSS3 rounded corners */
+	
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+	background-color:#2993dd;
+	
+	/*	CSS3 inner shadow */
+	
+ 
+}
+
+#holder li{
+	background-color:#F4F4F4;
+	list-style-type: none;
+  
+	/* Regular CSS3 box shadows (not inset): */
+
+ 
+}
+ 
+
+.clear{
+	/* This class clears the floated elements */
+	clear:both;
+}
+
+
+/* The styles below are only necessary for the styling of the demo page */
+
+h1{
+	background-color:#272B2C;
+	border-bottom:1px solid #000000;
+	color:#EEEEEE;
+	font-size:32px;
+	font-weight:normal;
+	margin-bottom:30px;
+	padding:30px 0;
+	text-align:center;
+	
+ 
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+h2{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+	
+	position:absolute;
+	right:40px;
+	top:43px;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
