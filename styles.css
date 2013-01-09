@@ -8,18 +8,20 @@ body{
 	/* Setting default text color, background and a font stack */
 	font-size:0.825em;
 	color:#666;
- 	font-family:Arial, Helvetica, sans-serif;
+	background:url('img/page_bg.jpg') repeat-x #383b3f;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 #main{
 	/* The main container div */
 	position:relative;
 	margin:50px auto;
-	width:250px;
- 	border:1px solid #CCCCCC;
+	width:410px;
+	background:url('img/main_bg.jpg') repeat-x #aeadad;
+	border:1px solid #CCCCCC;
 	padding:70px 25px 60px;
 	
-	/* CSS3 rounded corners */
+	/* CSS3 rounded cornenrs */
 	
 	-moz-border-radius:12px;
 	-webkit-border-radius:12px;
@@ -29,15 +31,18 @@ body{
 #holder{
 	/* The unordered list that is to be split into pages */
 
-	width:205px;
+	width:400px;
 	overflow:hidden;
 	position:relative;
- 	padding-bottom:10px;
+	background:url('img/dark_bg.jpg') repeat #4e5355;
+	padding-bottom:10px;
 
 	/*	CSS3 inner shadow (the webkit one is commeted, because Google Chrome
 		does not like rounded corners combined with inset shadows): */
 
-	 
+	-moz-box-shadow:0 0 10px #222 inset;
+	/*-webkit-box-shadow:0 0 10px #222 inset;*/
+	box-shadow:0 0 10px #222 inset;
 }
 
 .swControls{
@@ -70,18 +75,32 @@ a.swShowPage.active{
 	
 	/*	CSS3 inner shadow */
 	
- 
+	-moz-box-shadow:0 0 7px #1e435d inset;
+	/*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+	box-shadow:0 0 7px #1e435d inset;
 }
 
 #holder li{
 	background-color:#F4F4F4;
-	list-style-type: none;
-  
+	list-style:none outside none;
+	margin:10px 10px 0;
+	padding:20px;
+	float:left;
+
 	/* Regular CSS3 box shadows (not inset): */
 
- 
+	-moz-box-shadow:0 0 6px #111111;
+	-webkit-box-shadow:0 0 6px #111111;
+	box-shadow:0 0 6px #111111;
 }
- 
+
+#holder,
+#holder li{
+	/* Applying rouded corners to both the holder and the holder lis */
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
 
 .clear{
 	/* This class clears the floated elements */
@@ -101,7 +120,9 @@ h1{
 	padding:30px 0;
 	text-align:center;
 	
- 
+	-moz-box-shadow:0 1px 0 #444444;
+	-webkit-box-shadow:0 1px 0 #444444;
+	box-shadow:0 1px 0 #444444;
 }
 
 h1,h2{
